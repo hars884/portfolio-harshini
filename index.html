@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshini A — Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">HA<span class="dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="dot-red"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+          <span class="terminal-title">harshini@dev ~ </span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+          <p class="terminal-output" id="typewriter"></p>
+          <p class="terminal-line mt"><span class="prompt">$</span> <span class="cmd">cat skills.txt</span></p>
+          <p class="terminal-output">Flask · Django · React.js · Node.js · PostgreSQL · Python</p>
+          <p class="terminal-line mt"><span class="prompt">$</span> <span class="blink">_</span></p>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Full-Stack Developer & CS Student</p>
+        <h1 class="hero-name">Harshini<br /><span class="accent">A.</span></h1>
+        <p class="hero-bio">
+          Computer Science Engineering student building scalable full-stack web applications. 
+          Experienced with Flask, Django, React, and PostgreSQL — passionate about clean code, 
+          thoughtful architecture, and solving real problems.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Coimbatore, Tamil Nadu</span>
+          <span>🎓 KGiSL Institute of Technology</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What I work with</p>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>Python</span><span>Java</span><span>C</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend</h3>
+          <div class="tags">
+            <span>React.js</span><span>HTML</span><span>CSS</span><span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>Backend</h3>
+          <div class="tags">
+            <span>Flask</span><span>Django</span><span>Node.js</span><span>Spring Boot</span><span>REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="tags">
+            <span>PostgreSQL</span><span>SQL</span><span>DB Design</span><span>Query Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>AI / ML</h3>
+          <div class="tags">
+            <span>Supervised Learning</span><span>Regression</span><span>Clustering</span><span>Neural Networks</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools & Practices</h3>
+          <div class="tags">
+            <span>Git</span><span>Linux</span><span>OOP</span><span>API Integration</span><span>Testing</span><span>VirtualBox</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Things I've built</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">✅</div>
+            <div class="project-stack">
+              <span>Flask</span><span>JavaScript</span><span>SQL</span>
+            </div>
+          </div>
+          <h3 class="project-title">Task Management App</h3>
+          <p class="project-desc">
+            A full-featured task management system with user authentication and complete CRUD operations. 
+            Includes recurring reminder support and intelligent tracking of incomplete tasks to keep users on top of their workload.
+          </p>
+          <ul class="project-highlights">
+            <li>User authentication system</li>
+            <li>Recurring reminders & notifications</li>
+            <li>Incomplete task tracking dashboard</li>
+          </ul>
+          <a href="https://github.com/hars88" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card project-card-featured">
+          <div class="project-top">
+            <div class="project-icon">📊</div>
+            <div class="project-stack">
+              <span>Node.js</span><span>TypeScript</span><span>SQL</span>
+            </div>
+          </div>
+          <h3 class="project-title">Self Appraisal System</h3>
+          <p class="project-desc">
+            An enterprise-grade performance appraisal platform enabling structured evaluation submission and progress tracking. 
+            Built with TypeScript for type safety and robust record management with streamlined review workflows.
+          </p>
+          <ul class="project-highlights">
+            <li>Evaluation submission & tracking</li>
+            <li>Structured record management</li>
+            <li>Review workflow automation</li>
+          </ul>
+          <a href="https://github.com/hars88" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">📔</div>
+            <div class="project-stack">
+              <span>Flask</span><span>JavaScript</span><span>SQL</span>
+            </div>
+          </div>
+          <h3 class="project-title">Diary Web Application</h3>
+          <p class="project-desc">
+            A private, secure personal diary platform with robust authentication. 
+            Users can write, store, and revisit daily entries with automatic date and time stamping for a complete personal history.
+          </p>
+          <ul class="project-highlights">
+            <li>Secure user authentication</li>
+            <li>Date & time-stamped entries</li>
+            <li>Private entry management</li>
+          </ul>
+          <a href="https://github.com/hars88" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">My background</p>
+        <h2 class="section-title">Education & Certifications</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-timeline">
+          <div class="edu-card">
+            <div class="edu-dot"></div>
+            <div class="edu-info">
+              <span class="edu-badge">Current</span>
+              <h3>B.E. Computer Science & Engineering</h3>
+              <p class="edu-inst">KGiSL Institute of Technology, Tamil Nadu</p>
+              <p class="edu-detail">3rd Year — Building full-stack applications & deepening systems knowledge</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-dot"></div>
+            <div class="edu-info">
+              <span class="edu-badge completed">Completed</span>
+              <h3>BS in Data Science – Foundation Level</h3>
+              <p class="edu-inst">Indian Institute of Technology Madras</p>
+              <p class="edu-detail">Foundations in statistics, programming, and machine learning</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs-panel">
+          <h3 class="certs-title">Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-icon">🎓</span>
+              <div>
+                <p class="cert-name">IIT Madras BS in Data Science</p>
+                <p class="cert-sub">Foundation Certificate</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">📜</span>
+              <div>
+                <p class="cert-name">Coursera Certifications</p>
+                <p class="cert-sub">Multiple completed courses</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">💼</span>
+              <div>
+                <p class="cert-name">TechPark Internship</p>
+                <p class="cert-sub">Industry experience certificate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container contact-inner">
+      <div class="section-header">
+        <p class="section-eyebrow">Let's connect</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-sub">I'm open to internships, collaborations, and full-time opportunities. Drop a message!</p>
+      </div>
+      <div class="contact-cards">
+        <a href="mailto:harshini8564@gmail.com" class="contact-card">
+          <span class="contact-card-icon">✉️</span>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">harshini8564@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+919952770099" class="contact-card">
+          <span class="contact-card-icon">📞</span>
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">+91 9952770099</p>
+          </div>
+        </a>
+        <a href="https://github.com/hars88" target="_blank" class="contact-card">
+          <span class="contact-card-icon">💻</span>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/hars88</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed & built by <span class="accent">Harshini A</span> · 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
